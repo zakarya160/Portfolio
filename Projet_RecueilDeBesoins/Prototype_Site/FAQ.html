@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Formulaire BibliToys</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .top-buttons {
+            margin-left: 10px;
+        }
+
+        .top-buttons button {
+            margin-right: 10px;
+            background-color: #2980b9;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .top-buttons button:hover {
+            background-color: #3498db;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+        }
+
+        footer section {
+            background-color: #3498db;
+            padding: 10px;
+            border-radius: 8px;
+            color: #fff;
+        }
+        
+        
+        form {
+            width: 50%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+        
+        textarea {
+            height: 150px; /* Hauteur plus grande pour la section question */
+        }
+        
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="Accueil.html"><img src="images/logo.png" alt="BibliToys Logo" height="50"></a>
+        </div>
+        <div class="top-buttons">
+            <button>Calendrier</button>
+            <button>Se connecter</button>
+            <button>Mon panier</button>
+        </div>
+    </header>
+
+    <main>
+        <form>
+            <h1>F.A.Q.</h1>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="email">E-mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="question">Question :</label>
+            <textarea id="question" name="question" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="section-links">
+            <a href="https://maps.app.goo.gl/3cWCp3yKi8cjpeKx5">Nos magasins</a>
+            <a href="https://bio.link/biblitoys">Nous contacter</a>
+            <a href="FAQ.html">F.A.Q.</a>
+            <a href="About-us.html">Qui sommes-nous ?</a>
+        </div>
+        </br>
+        <div class="footer-images">
+            <img src="images/eco.avif" alt="Image" width="100" heigth="100">
+            <img src="images/fr.jpg" alt="Image" width="100" heigth="100">
+        </div>
+        <section>
+            <p>© 2024 BibliToys</p>
+        </section>
+    </footer>
+
+</body>
+</html>
+
